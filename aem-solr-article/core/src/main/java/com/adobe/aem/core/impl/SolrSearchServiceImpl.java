@@ -155,7 +155,7 @@ public class SolrSearchServiceImpl implements SolrSearchService {
 			HttpSolrClient server) throws JSONException, SolrServerException,
 			IOException {
 		if (null != indexPageData) {
-
+			System.out.println("hi");
 			for (int i = 0; i < indexPageData.length(); i++) {
 				JSONObject pageJsonObject = indexPageData.getJSONObject(i);
 				SolrInputDocument doc = createPageSolrDoc(pageJsonObject);
